@@ -1,0 +1,79 @@
+1) What do you mean by Java and why Java is known as platform independent?
+
+Java is a high-level, object-oriented programming language used to develop various applications such as web, mobile, and desktop software. It is known as platform independent because Java programs are compiled into an intermediate form called bytecode, which can run on any system that has a Java Virtual Machine (JVM). This means the same Java program can be executed on different operating systems without modification, following the principle “Write Once, Run Anywhere.”
+
+
+2) Explain the architecture of JDK in detail
+
+The Java Development Kit (JDK) is a complete package used for developing Java applications. It consists of three main components: JDK, JRE, and JVM. The JDK provides development tools such as the Java compiler (javac), debugger, and other utilities. The Java Runtime Environment (JRE) provides the necessary libraries and environment to run Java programs. Inside the JRE is the Java Virtual Machine (JVM), which executes the bytecode. The overall architecture ensures that Java programs can be compiled and executed efficiently across different platforms.
+
+
+3) What is JVM? Explain its role in Java
+
+The Java Virtual Machine (JVM) is an important part of the Java platform that is responsible for executing Java bytecode. It acts as an interface between the compiled Java program and the underlying hardware. The JVM converts bytecode into machine-level instructions that the computer can understand. It also handles memory management, garbage collection, and provides security features. Due to JVM, Java programs can run on any platform without changes.
+
+
+4) Explain the process of “Write Once, Run Anywhere”
+
+The concept “Write Once, Run Anywhere” means that a Java program written on one system can run on any other system without modification. This process works by compiling the Java source code into bytecode using the Java compiler. The bytecode is not dependent on any specific platform. It is then executed by the JVM, which is available for different operating systems. Since each system has its own JVM, the same bytecode can run everywhere, making Java platform independent.
+
+
+5) Explain the concept of bytecode in Java
+
+Bytecode is the intermediate code generated when a Java program is compiled. It is stored in a .class file and is not directly executed by the computer’s hardware. Instead, the JVM interprets or compiles this bytecode into machine code. Bytecode is platform independent, which allows Java programs to run on different systems without modification. It plays a key role in achieving portability in Java.
+
+
+6) What do you mean by datatype and differentiate between primitive and non-primitive datatypes with an example
+
+A datatype in Java specifies the type of data that a variable can store. It defines the size and nature of the value. Datatypes are mainly classified into primitive and non-primitive types. Primitive datatypes such as int, float, char, and boolean store actual values and are predefined by Java. Non-primitive datatypes such as String, arrays, and objects store references to memory locations and are created by the programmer. For example, int a = 10 is a primitive datatype, while String name = "Java" is a non-primitive datatype.
+
+
+7) What do you mean by default values?
+
+Default values in Java are the values automatically assigned to variables when they are declared but not initialized. These values depend on the datatype of the variable. For example, numeric types like int have a default value of 0, float and double have 0.0, boolean has false, and char has a null character. Default values are assigned only to instance and static variables, while local variables must be initialized before use.
+
+
+8) What are variables in Java? Differentiate between static and local variables with an example
+
+Variables in Java are used to store data values during program execution. They act as containers for data. Static variables are declared using the static keyword and belong to the class rather than any object. They are shared among all instances and have default values. Local variables are declared inside methods and exist only during the execution of that method. They do not have default values and must be initialized before use. For example, a static variable can be accessed using the class name, while a local variable is accessed only within its method.
+
+
+9) What is a static method? How do you call a static method?
+
+A static method in Java is a method that belongs to the class rather than an instance of the class. It is declared using the static keyword and can be called without creating an object. Static methods can directly access static variables but cannot access non-static variables directly. They are commonly used for utility or helper functions. A static method is called using the class name followed by the method name, such as ClassName.methodName().
+class Test {
+    static void display() {
+        System.out.println("Hello");
+    }
+
+    public static void main(String[] args) {
+        Test.display(); 
+    }
+}
+
+10) A shopkeeper records daily sales for a week. Find total sales and highest sale day
+
+In this problem, the shopkeeper records sales for seven days of the week. The program stores these values in an array and calculates the total sales by adding all the elements. It also finds the highest sale by comparing each day’s value and tracking the maximum value along with the corresponding day. Finally, the program displays the total sales for the week and identifies the day with the highest sales.
+
+class Sales {
+    public static void main(String[] args) {
+
+        int[] sales = {1200, 1500, 1800, 2000, 1700, 2200, 1600};
+
+        int total = 0;
+        int max = sales[0];
+        int day = 1;
+
+        for(int i = 0; i < 7; i++) {
+            total += sales[i];
+
+            if(sales[i] > max) {
+                max = sales[i];
+                day = i + 1;
+            }
+        }
+
+        System.out.println("Total Sales: " + total);
+        System.out.println("Highest Sale Day: Day " + day);
+    }
+}
