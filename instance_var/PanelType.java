@@ -1,0 +1,3 @@
+enum PanelType {
+	RESIDENTIAL, COMMERCIAL, INDUSTRIAL
+}
