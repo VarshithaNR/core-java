@@ -1,0 +1,4 @@
+
+enum PlayerType{
+	INDOOR,OUTDOOR
+}
