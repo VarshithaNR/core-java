@@ -1,9 +1,9 @@
-1) class is a blueprint that is used to create an object
+ 1) class is a blueprint that is used to create an object
 	class College{
 		//body variables and methods
 	}
 	
-2) class Car{
+ 2) class Car{
 	String brand;
 	String model;
 	int year;
@@ -22,7 +22,7 @@
 	  }
   }
   
-3) Methods are a block of code that performs specific task declared inside the class
+ 3) Methods are a block of code that performs specific task declared inside the class
 		class Car{
 	String brand;
 	String model;
@@ -35,7 +35,8 @@
 	}
   }
   
-4) Method overloading is a type of polymorphism where it consists of several method of similar name but different in there parameters
+ 4) Method overloading is a type of polymorphism where it consists of several 
+   method of similar name but different in there parameters
 		class Add(int a , int b){
 			return a+b;
 		}
@@ -43,7 +44,7 @@
 			return a+b+c;
 		}
   
-5) Constructor is a special type of method that is used to initaize the object it uses the new keyword for it,
+ 5) Constructor is a special type of method that is used to initaize the object it uses the new keyword for it,
   it has same name as class name without any access specifiers
 		class Work{
 			int a;
@@ -53,14 +54,14 @@
 			}
 		}
  
-6) types of constructor are:
+ 6) types of constructor are:
 							default
 							parameterized
 							
-7) this reffers to the current object of the class. it is maily used to distinguish between the instance variable
+ 7) this reffers to the current object of the class. it is maily used to distinguish between the instance variable
    and parameters or to call other constructor or method
    
-8)  class Car{
+ 8)  class Car{
 	String brand;
 	String model;
 	int year;
