@@ -1,0 +1,16 @@
+
+class CuppRunner {
+
+    public static void main(String... args) {
+
+        Cupp cupp = new Cupp();
+
+        cupp.saveCup("Tea Cup");
+        cupp.saveCup("Coffee Cup");
+        cupp.saveCup("Glass Cup");
+        cupp.saveCup("Steel Cup");
+        cupp.saveCup("Plastic Cup");
+
+        cupp.search("Tea Cup");
+    }
+}
